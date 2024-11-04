@@ -1,1 +1,39 @@
-# LoDisc
+# LoDisc: Learning Complementary Local Discriminative Features for Self-Supervised Fine-Grained Visual Recognition
+## Overview of global-local self-supervised fine-grained visual recognition framework.
+![overview](overview.pdf)
+
+## Datasets:
+* [StanfordCars](https://paperswithcode.com/dataset/stanford-cars)
+* [FGVC-Aircraft](https://paperswithcode.com/dataset/fgvc-aircraft-1)
+* [Caltech-101](https://paperswithcode.com/dataset/caltech-101)
+
+## Usage:
+### 1. Install the required packages:
+
+```
+pip install -r requirements.txt
+```
+
+### 2. The running commands for pre-training and retrieval:
+```
+python main.py \
+  -a vit_b_16 -b 32 \
+  --optimizer=adamw --lr=1e-3 --weight-decay=0.5 \
+  --epochs=100 \
+  --stop-grad-conv1 --moco-m-cos --moco-t=.2 \
+  --dist-url 'tcp://localhost:10001' \
+  --multiprocessing-distributed --world-size 1 --rank 0 \
+  [your dataset-folder with train and val folders]
+```
+### 3. The running commands for linear probing:
+```
+python main_lincls.py \
+  -a vit_b_16 \
+  --lr 0.5 \
+  --dist-url 'tcp://localhost:10001' \
+  --multiprocessing-distributed --world-size 1 --rank 0 \
+  --pretrained [your checkpoint path]/[your checkpoint file].pth.tar \
+  [your dataset-folder with train and val folders] --class_num [number of categories in your dataset]
+```
+## Acknowledgements:
+Our implementation is partly based on the open-source implementations from [MoCo v3](https://github.com/facebookresearch/moco-v3) and [LCR](https://github.com/GANPerf/LCR). We gratefully thank the authors for their wonderful works.
