@@ -5,7 +5,7 @@
 ## Datasets:
 * [StanfordCars](https://paperswithcode.com/dataset/stanford-cars)
 * [FGVC-Aircraft](https://paperswithcode.com/dataset/fgvc-aircraft-1)
-* [CUB-200-2011]
+* [CUB-200-2011](https://paperswithcode.com/dataset/cub-200-2011)
 
 ## Usage:
 ### 1. Install the required packages:
