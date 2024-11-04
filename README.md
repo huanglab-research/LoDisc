@@ -1,6 +1,6 @@
 # LoDisc: Learning Complementary Local Discriminative Features for Self-Supervised Fine-Grained Visual Recognition
 ## Overview of global-local self-supervised fine-grained visual recognition framework.
-![overview](overview.pdf)
+![overview](overview.jpg)
 
 ## Datasets:
 * [StanfordCars](https://paperswithcode.com/dataset/stanford-cars)
