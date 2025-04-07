@@ -43,3 +43,8 @@ If there are any issues or questions regarding the codes, please feel free to co
 
 ## Acknowledgements:
 Our implementation is partly based on the open-source implementations from [MoCo v3](https://github.com/facebookresearch/moco-v3) and [LCR](https://github.com/GANPerf/LCR). We gratefully thank the authors for their wonderful works.
+
+## References:
+* [Vits.py](https://github.com/pytorch/vision/blob/main/torchvision/models/vision_transformer.py)
+
+
