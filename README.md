@@ -35,5 +35,9 @@ python main_lincls.py \
   --pretrained [your checkpoint path]/[your checkpoint file].pth.tar \
   [your dataset-folder with train and val folders] --class_num [number of categories in your dataset]
 ```
+
+## Contact:
+If there are any issues or questions regarding the codes, please feel free to contact us at shijialu@stu.ouc.edu.cn
+
 ## Acknowledgements:
 Our implementation is partly based on the open-source implementations from [MoCo v3](https://github.com/facebookresearch/moco-v3) and [LCR](https://github.com/GANPerf/LCR). We gratefully thank the authors for their wonderful works.
