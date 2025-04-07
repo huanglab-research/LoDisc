@@ -35,6 +35,8 @@ python main_lincls.py \
   --pretrained [your checkpoint path]/[your checkpoint file].pth.tar \
   [your dataset-folder with train and val folders] --class_num [number of categories in your dataset]
 ```
+### 4. Other Matters:
+Some content is temporarily restricted but will be made available in the near future.
 
 ## Contact:
 If there are any issues or questions regarding the codes, please feel free to contact us at shijialu@stu.ouc.edu.cn
