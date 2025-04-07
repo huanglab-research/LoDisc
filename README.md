@@ -17,8 +17,8 @@ pip install -r requirements.txt
 ### 2. The running commands for pre-training and retrieval:
 ```
 python main.py \
-  -a vit_b_16 -b 32 \
-  --optimizer=adamw --lr=1e-3 --weight-decay=0.5 \
+  -a vit_b_16 -b [batch_size] \
+  --optimizer=adamw --lr=[learning_rate] --weight-decay=0.5 \
   --epochs=100 \
   --stop-grad-conv1 --moco-m-cos --moco-t=.2 \
   --dist-url 'tcp://localhost:10001' \
