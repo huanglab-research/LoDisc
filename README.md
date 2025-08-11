@@ -3,9 +3,9 @@
 ![overview](overview.jpg)
 
 ## Datasets:
-* [FGVC-Aircraft](https://paperswithcode.com/dataset/fgvc-aircraft-1)
-* [StanfordCars](https://paperswithcode.com/dataset/stanford-cars)
-* [CUB-200-2011](https://paperswithcode.com/dataset/cub-200-2011)
+* [FGVC-Aircraft](https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/)
+* [StanfordCars](https://huggingface.co/datasets/tanganke/stanford_cars)
+* [CUB-200-2011](https://www.vision.caltech.edu/datasets/cub_200_2011/)
 
 ## Usage:
 ### 1. Install the required packages:
